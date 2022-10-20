@@ -7,7 +7,7 @@
     <trans_version/>
     <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
-    <directory>&#x2f;</directory>
+    <directory>/</directory>
     <parameters>
     </parameters>
     <log>
@@ -428,17 +428,17 @@
     <clusterschemas>
     </clusterschemas>
     <created_user/>
-    <created_date>2014&#x2f;02&#x2f;26 16&#x3a;50&#x3a;39.366</created_date>
+    <created_date>2014/02/26 16:50:39.366</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2007&#x2f;08&#x2f;03 12&#x3a;38&#x3a;07.692</modified_date>
-    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA&#x3d;</key_for_session_key>
+    <modified_date>2007/08/03 12:38:07.692</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
     <notepad>
-      <note>http&#x3a;&#x2f;&#x2f;webservices.gama-system.com&#x2f;&#x3f;cat&#x3d;1&#x26;lang&#x3d;eng - for more information about web service</note>
-      <xloc>301</xloc>
-      <yloc>363</yloc>
+      <note>http://webservices.gama-system.com/?cat=1&amp;lang=eng - for more information about web service</note>
+      <xloc>320</xloc>
+      <yloc>352</yloc>
       <width>566</width>
       <heigth>25</heigth>
       <fontname>Arial</fontname>
@@ -535,6 +535,7 @@
     <interval_in_ms/>
     <row_time_field/>
     <last_time_field/>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -547,8 +548,7 @@
       <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>
-    </step>
-
+  </step>
   <step>
     <name>Web services lookup</name>
     <type>WebServiceLookup</type>
@@ -560,10 +560,10 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <wsURL>http&#x3a;&#x2f;&#x2f;webservices.gama-system.com&#x2f;exchangerates.asmx&#x3f;WSDL</wsURL>
+    <wsURL>http://webservices.gama-system.com/exchangerates.asmx?WSDL</wsURL>
     <wsOperation>GetCurrentExchangeRate</wsOperation>
     <wsOperationRequest/>
-    <wsOperationNamespace>http&#x3a;&#x2f;&#x2f;www.gama-system.com&#x2f;webservices</wsOperationNamespace>
+    <wsOperationNamespace>http://www.gama-system.com/webservices</wsOperationNamespace>
     <wsInFieldContainer/>
     <wsInFieldArgument/>
     <wsOutFieldContainer>GetCurrentExchangeRateResult</wsOutFieldContainer>
@@ -578,29 +578,30 @@
     <repeating_element/>
     <reply_as_string>N</reply_as_string>
     <fieldsIn>
-    <field>
+      <field>
         <name>Bank</name>
         <wsName>strBank</wsName>
         <xsdType>string</xsdType>
-    </field>
-    <field>
+      </field>
+      <field>
         <name>ToCurrency</name>
         <wsName>strCurrency</wsName>
         <xsdType>string</xsdType>
-    </field>
-    <field>
+      </field>
+      <field>
         <name>Rank</name>
         <wsName>intRank</wsName>
         <xsdType>int</xsdType>
-    </field>
-      </fieldsIn>
+      </field>
+    </fieldsIn>
     <fieldsOut>
-    <field>
+      <field>
         <name>GetCurrentExchangeRateResult</name>
         <wsName>GetCurrentExchangeRateResult</wsName>
         <xsdType>decimal</xsdType>
-    </field>
-      </fieldsOut>
+      </field>
+    </fieldsOut>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -613,8 +614,7 @@
       <yloc>207</yloc>
       <draw>Y</draw>
     </GUI>
-    </step>
-
+  </step>
   <step>
     <name>XML Output</name>
     <type>XMLOutput</type>
@@ -631,7 +631,7 @@
     <xml_main_element>Rows</xml_main_element>
     <xml_repeat_element>Row</xml_repeat_element>
     <file>
-      <name>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x2f;output&#x2f;&#x24;&#x7b;Internal.Transformation.Name&#x7d;</name>
+      <name>${Internal.Transformation.Filename.Directory}/output/${Internal.Transformation.Name}</name>
       <extention>xml</extention>
       <servlet_output>N</servlet_output>
       <do_not_open_newfile_init>N</do_not_open_newfile_init>
@@ -660,6 +660,7 @@
         <precision>-1</precision>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -672,11 +673,11 @@
       <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>
-    </step>
-
+  </step>
   <step_error_handling>
   </step_error_handling>
   <slave-step-copy-partition-distribution>
   </slave-step-copy-partition-distribution>
   <slave_transformation>N</slave_transformation>
+  <attributes/>
 </transformation>
