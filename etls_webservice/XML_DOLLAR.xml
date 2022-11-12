@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Rows>
+<Row><dnum>2</dnum> <NumberToDollarsResult>two dollars</NumberToDollarsResult></Row>
+<Row><dnum>3</dnum> <NumberToDollarsResult>three dollars</NumberToDollarsResult></Row>
+<Row><dnum>1</dnum> <NumberToDollarsResult>one dollar</NumberToDollarsResult></Row>
+<Row><dnum>13</dnum> <NumberToDollarsResult>thirteen dollars</NumberToDollarsResult></Row>
+<Row><dnum>5</dnum> <NumberToDollarsResult>five dollars</NumberToDollarsResult></Row>
+<Row><dnum>6</dnum> <NumberToDollarsResult>six dollars</NumberToDollarsResult></Row>
+</Rows>
